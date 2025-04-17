@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayeesa's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* New Gradient */
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+    .scrolling-icons {
+      display: flex;
+      animation: scroll 10s linear infinite;
+      gap: 2rem;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .scrolling-icons img {
+      width: 40px;
+      height: 40px;
+      animation: bounce 5s infinite alternate;
+    }
+  </style>
+</head>
+
+<body class="text-gray-800">
+  <header class="sticky top-0 z-50 bg-white bg-opacity-90 shadow-md p-4">
+    <nav class="flex justify-center items-center max-w-6xl mx-auto">
+      <ul class="flex flex-wrap gap-6 text-sm font-semibold">
+        <li><a href="#about" class="hover:text-purple-600">About</a></li>
+        <li><a href="#education" class="hover:text-purple-600">Education</a></li>
+        <li><a href="#skills" class="hover:text-purple-600">Skills</a></li>
+        <li><a href="#projects" class="hover:text-purple-600">Projects</a></li>
+        <li><a href="#certificates" class="hover:text-purple-600">Certificates</a></li>
+        <li><a href="#contact" class="hover:text-purple-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-16">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center" id="about" data-aos="fade-right">
+      <div class="space-y-10">
+        <div>
+          <h1 class="text-4xl font-bold text-purple-800 mb-4">👋 Hi, I'm Rayeesa Mahmood</h1>
+          <p class="text-lg text-gray-700 mb-4">A passionate web developer and tech enthusiast.</p>
+        </div>
+
+        <div id="education" data-aos="fade-left" class="space-y-5">
+          <h2 class="text-3xl font-bold text-purple-800">📚 Education</h2>
+          <ul class="space-y-4 text-base">
+            <li class="flex items-center">
+              <span class="mr-2 text-purple-600">🎓</span>
+              <strong>B.E. in Computer Science</strong> – Lords Institute of Engineering & Technology (2022–2026)
+            </li>
+            <li class="flex items-center">
+              <span class="mr-2 text-purple-600">🏫</span>
+              <strong>Intermediate</strong> – Iqbalia Junior College (2022)
+            </li>
+            <li class="flex items-center">
+              <span class="mr-2 text-purple-600">📘</span>
+              <strong>High School</strong> – Nalanda Public School-ICSE (2020)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <img src="https://i.postimg.cc/7ZfYCgTB/Screenshot-243.png" alt="Web Dev Animation" class="rounded-xl shadow-lg w-full max-w-md" />
+      </div>
+    </section>
+
+    <section id="skills" data-aos="fade-left" class="space-y-7">
+      <h2 class="text-3xl font-bold text-purple-800 mt-5">💻 Skills</h2>
+      <div class="overflow-hidden">
+        <div class="scrolling-icons">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-right" class="space-y-7">
+      <h2 class="text-3xl font-bold text-purple-800">🛠️ Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold mb-2">RERA Website</h3>
+          <p class="text-sm text-gray-600">A Resource provider</p>
+          <a href="https://rayeesamahmood.github.io/RERA/" class="text-purple-600 hover:underline mt-2 block">View on GitHub</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold mb-2">SpamTracker</h3>
+          <p class="text-sm text-gray-600">A tool for detecting spam and scam websites.</p>
+          <a href="https://github.com/yourusername/spamtracker" target="_blank" class="text-purple-600 hover:underline mt-2 block">View on GitHub</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold mb-2">RayCare Management System</h3>
+          <p class="text-sm text-gray-600">A hospital management queue system</p>
+          <a href="https://rayeesamahmood.github.io/RayCare-Queue/" class="text-purple-600 hover:underline mt-2 block">View on GitHub</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="certificates" data-aos="fade-left" class="space-y-2">
+      <h2 class="text-3xl font-bold text-purple-800">📄 Certificates</h2>
+      <ul class="space-y-2">
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="inline-block h-6 mr-2" />Web Development Bootcamp – Udemy</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="inline-block h-6 mr-2" />Python for Everybody – Coursera</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="inline-block h-6 mr-2" />Frontend Development – Google Career Certificate</li>
+        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="inline-block h-6 mr-2" />Web Development – Coursera</li>
+      </ul>
+    </section>
+
+    <section id="contact" data-aos="fade-up" class="space-y-6">
+      <h2 class="text-2xl font-bold text-purple-800 text-center">📞 Contact</h2>
+      <div class="flex justify-center">
+        <form action="https://formspree.io/f/yourformid" method="POST" class="bg-white p-4 rounded-lg shadow-md space-y-2 text-sm w-full max-w-sm">
+          <input type="text" name="name" placeholder="Your Name" class="w-full p-2 border rounded" required />
+          <input type="email" name="email" placeholder="Your Email" class="w-full p-2 border rounded" required />
+          <textarea name="message" placeholder="Your Message" rows="3" class="w-full p-2 border rounded" required></textarea>
+          <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded w-full">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 text-sm text-gray-600">
+    <div class="space-x-4 mb-2 flex justify-center items-center gap-4">
+      <a href="https://github.com/RayeesaMahmood" target="_blank" class="hover:text-purple-600 flex items-center gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Logo" class="h-5" />
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/rayeesa-mahmood/" target="_blank" class="hover:text-purple-600 flex items-center gap-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Logo" class="h-5" />
+        LinkedIn
+      </a>
+    </div>
+    Rayeesa Mahmood
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+    });
+  </script>
+</body>
+</html>
